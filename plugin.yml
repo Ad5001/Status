@@ -1,0 +1,23 @@
+---
+name: Status
+author: Ad5001
+version: "0.1"
+api: [2.0.0, 1.14.0]
+main: Ad5001\Status\Main
+commands: 
+    status:
+      description: "Main status command"
+      usage: "/status  <bio | status | twitter | youtube | facebook | reset> <message | account name>"
+      permission: status.command.status
+    whois:
+      description: "See everything cool about a player"
+      usage: "/whois <player> [bio | status | twitter | youtube | facebook]"
+      permission: status.command.whois
+permissions: 
+    status.command.status:
+     description: "Main status command"
+     default: true
+    status.command.whois:
+     description: "See everything cool about a player"
+     default: true
+...
